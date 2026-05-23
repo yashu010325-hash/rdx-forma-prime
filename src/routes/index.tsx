@@ -30,8 +30,9 @@ function Index() {
       <IntroVideo />
       <About />
       <Trainers />
-      <Programs />
-      <Membership />
+        <Programs />
+        <Membership />
+        <SmartPass />
       <CTA />
       <Footer />
     </main>
