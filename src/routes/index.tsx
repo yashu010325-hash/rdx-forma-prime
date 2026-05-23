@@ -5,6 +5,7 @@ import { IntroVideo } from "@/components/IntroVideo";
 import { About } from "@/components/About";
 import { Trainers } from "@/components/Trainers";
 import { Programs } from "@/components/Programs";
+import { SmartPass } from "@/components/SmartPass";
 import { Membership } from "@/components/Membership";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
@@ -29,8 +30,9 @@ function Index() {
       <IntroVideo />
       <About />
       <Trainers />
-      <Programs />
-      <Membership />
+        <Programs />
+        <Membership />
+        <SmartPass />
       <CTA />
       <Footer />
     </main>
