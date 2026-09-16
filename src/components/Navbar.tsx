@@ -6,6 +6,7 @@ const links = [
   { label: "Trainers", href: "#trainers" },
   { label: "Programs", href: "#programs" },
   { label: "Membership", href: "#membership" },
+  { label: "Gym Code", href: "#standards" },
   { label: "Contact", href: "#contact" },
 ];
 

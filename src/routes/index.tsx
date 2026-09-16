@@ -9,6 +9,7 @@ import { SmartPass } from "@/components/SmartPass";
 import { Membership } from "@/components/Membership";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import { GymStandards } from "@/components/GymStandards";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,6 +33,7 @@ function Index() {
       <Trainers />
         <Programs />
         <Membership />
+        <GymStandards />
         <SmartPass />
       <CTA />
       <Footer />
