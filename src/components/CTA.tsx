@@ -16,8 +16,8 @@ export function CTA() {
               <a href="#membership" className="rounded-full bg-primary px-7 py-4 text-sm font-semibold text-primary-foreground shadow-glow transition-transform hover:scale-105">
                 Book Free Trial
               </a>
-              <a href="tel:+910000000000" className="rounded-full glass px-7 py-4 text-sm font-semibold transition hover:bg-white/10">
-                Call +91 00000 00000
+              <a href="tel:+919121211025" className="rounded-full glass px-7 py-4 text-sm font-semibold transition hover:bg-white/10">
+                Call +91 91212 11025
               </a>
             </div>
           </div>

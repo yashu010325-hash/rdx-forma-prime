@@ -18,6 +18,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Premium powerlifting, strength training, and smart fitness tracking under one ecosystem. Build strength. Build discipline. Build your forma." },
       { property: "og:title", content: "RDX Forma — Build Your Forma" },
       { property: "og:description", content: "Elite powerlifting, advanced strength training, and smart fitness tracking under one ecosystem." },
+       { property: "og:type", content: "website" },
+       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
