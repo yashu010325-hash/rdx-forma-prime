@@ -18,7 +18,11 @@ export function Footer() {
             <a href="#programs" className="hover:text-foreground">Programs</a>
             <a href="#membership" className="hover:text-foreground">Membership</a>
           </div>
-          <div className="text-xs text-muted-foreground">© {new Date().getFullYear()} RDX Forma. All rights reserved.</div>
+          <div className="text-center text-xs text-muted-foreground md:text-right">
+            <a href="mailto:getfit@rdxforma.com" className="block uppercase hover:text-foreground">getfit@rdxforma.com</a>
+            <a href="tel:+919121211025" className="mt-1 block hover:text-foreground">+91 91212 11025</a>
+            <span className="mt-2 block">© {new Date().getFullYear()} RDX Forma. All rights reserved.</span>
+          </div>
         </div>
       </div>
     </footer>

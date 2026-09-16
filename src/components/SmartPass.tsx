@@ -8,8 +8,7 @@ const tiers = [
     tag: "All-access · Personal coach",
     icon: Crown,
     accent: "from-primary via-primary to-accent",
-    price: "₹3,999",
-    period: "/mo",
+    access: "All-access",
     perks: ["Unlimited 24/7 access", "1:1 elite coach", "BMI + diet plan", "Recovery suite"],
     bmi: "21.4",
     valid: "12 Dec 2026",
@@ -20,8 +19,7 @@ const tiers = [
     tag: "Performance · Group coaching",
     icon: Zap,
     accent: "from-primary/80 via-primary/60 to-primary/30",
-    price: "₹2,499",
-    period: "/mo",
+    access: "Performance",
     perks: ["Peak-hours access", "Group performance classes", "Quarterly BMI scan", "Workout analytics"],
     bmi: "22.8",
     valid: "08 Aug 2026",
@@ -32,8 +30,7 @@ const tiers = [
     tag: "Hybrid · App-first",
     icon: Home,
     accent: "from-zinc-400/40 via-zinc-500/30 to-zinc-700/20",
-    price: "₹999",
-    period: "/mo",
+    access: "Hybrid",
     perks: ["3 gym visits / week", "Home workout library", "Smart progress tracking", "Diet templates"],
     bmi: "24.1",
     valid: "20 Jun 2026",
@@ -86,8 +83,8 @@ function MemberCard({ tier }: { tier: (typeof tiers)[number] }) {
 
         <div className="mt-6 flex items-end justify-between">
           <div>
-            <div className="font-display text-3xl font-bold text-gradient-red">{tier.price}</div>
-            <div className="text-xs text-muted-foreground">{tier.period} · cancel anytime</div>
+            <div className="font-display text-2xl font-bold text-gradient-red">{tier.access}</div>
+            <div className="text-xs text-muted-foreground">Smart membership pass</div>
           </div>
           <button className="rounded-full bg-primary px-5 py-2 text-xs font-semibold uppercase tracking-wider text-primary-foreground shadow-glow transition hover:scale-105">
             Activate
