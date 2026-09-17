@@ -1,14 +1,10 @@
 import { useRef } from "react";
-import t1 from "@/assets/trainer-1.jpg";
-import t2 from "@/assets/trainer-2.jpg";
-import t3 from "@/assets/trainer-3.jpg";
-import t4 from "@/assets/trainer-4.jpg";
 
 const trainers = [
-  { img: t1, name: "Aarav Rana", expertise: "Powerlifting Coach", years: 12, certs: ["IPF L3", "NSCA-CSCS"], specs: ["Powerlifting", "Strength & Conditioning"] },
-  { img: t2, name: "Maya Sehgal", expertise: "Women's Fitness & Fat Loss", years: 8, certs: ["ACE-CPT", "PN L2"], specs: ["Fat Loss", "Women's Fitness"] },
-  { img: t3, name: "Kabir Malhotra", expertise: "Sports Rehabilitation", years: 10, certs: ["DPT", "FRC"], specs: ["Rehab", "Mobility & Recovery"] },
-  { img: t4, name: "Riya Kapoor", expertise: "Bodybuilding Prep", years: 9, certs: ["IFBB Pro", "ISSA"], specs: ["Bodybuilding Prep", "Functional"] },
+  { name: "Aarav Rana", expertise: "Powerlifting Coach", years: 12, certs: ["IPF L3", "NSCA-CSCS"], specs: ["Powerlifting", "Strength & Conditioning"] },
+  { name: "Maya Sehgal", expertise: "Women's Fitness & Fat Loss", years: 8, certs: ["ACE-CPT", "PN L2"], specs: ["Fat Loss", "Women's Fitness"] },
+  { name: "Kabir Malhotra", expertise: "Sports Rehabilitation", years: 10, certs: ["DPT", "FRC"], specs: ["Rehab", "Mobility & Recovery"] },
+  { name: "Riya Kapoor", expertise: "Bodybuilding Prep", years: 9, certs: ["IFBB Pro", "ISSA"], specs: ["Bodybuilding Prep", "Functional"] },
 ];
 
 export function Trainers() {
@@ -44,23 +40,13 @@ export function Trainers() {
               key={t.name}
               className="group relative w-[300px] flex-none snap-start overflow-hidden rounded-3xl border border-border glass transition-all hover:border-primary/50 hover:-translate-y-1"
             >
-              <div className="relative h-[380px] overflow-hidden">
-                <img
-                  src={t.img}
-                  alt={t.name}
-                  loading="lazy"
-                  width={800}
-                  height={1000}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
-                <div className="absolute left-4 top-4 rounded-full glass-red px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-primary">
-                  {t.years}+ Yrs
-                </div>
-              </div>
               <div className="p-6">
+                <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-primary/40 bg-primary/10 font-display text-lg font-bold text-primary">
+                  {t.name.split(" ").map((part) => part[0]).join("")}
+                </div>
                 <h3 className="font-display text-xl font-bold">{t.name}</h3>
                 <div className="mt-1 text-sm text-primary">{t.expertise}</div>
+                <div className="mt-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">{t.years}+ years experience</div>
                 <div className="mt-4 flex flex-wrap gap-1.5">
                   {t.specs.map((s) => (
                     <span key={s} className="rounded-full bg-secondary px-2.5 py-1 text-[11px] text-muted-foreground">
